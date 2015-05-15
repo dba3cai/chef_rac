@@ -1,0 +1,5 @@
+@dba  soft nproc 131072
+@dba  hard nproc 131072
+@dba  soft nofile 131072
+@dba  hard nofile 131072
+@dba  soft stack 10240 

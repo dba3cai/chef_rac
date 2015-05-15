@@ -1,0 +1,85 @@
+oracle.install.responseFileVersion=/oracle/install/rspfmt_crsinstall_response_schema_v11_2_0
+
+ORACLE_HOSTNAME=<%= node[:fqdn] %>
+
+INVENTORY_LOCATION=<%= @INVENTORY_LOCATION %>
+
+SELECTED_LANGUAGES=en
+
+oracle.install.option=CRS_CONFIG
+
+ORACLE_BASE=<%= @ORACLE_BASE %>
+
+ORACLE_HOME=<%= @ORACLE_HOME %>
+
+oracle.install.asm.OSDBA=asmdba
+
+oracle.install.asm.OSOPER=asmoper
+
+oracle.install.asm.OSASM=asmadmin
+
+oracle.install.crs.config.gpnp.scanName=<%= @scan_name %>
+
+oracle.install.crs.config.gpnp.scanPort=<%= @scan_port %>
+
+oracle.install.crs.config.clusterName=<%= @cluster_name %>
+
+oracle.install.crs.config.gpnp.configureGNS=false
+
+oracle.install.crs.config.gpnp.gnsSubDomain=
+oracle.install.crs.config.gpnp.gnsVIPAddress=
+oracle.install.crs.config.autoConfigureClusterNodeVIP=false
+
+oracle.install.crs.config.clusterNodes=<%= @cluster_nodes %>
+
+oracle.install.crs.config.networkInterfaceList=eth0:<%= @eth0_inter %>:1,eth1:<%= @eth1_inter %>:2
+
+oracle.install.crs.config.storageOption=ASM_STORAGE
+
+oracle.install.crs.config.sharedFileSystemStorage.diskDriveMapping=
+
+oracle.install.crs.config.sharedFileSystemStorage.votingDiskLocations=
+oracle.install.crs.config.sharedFileSystemStorage.votingDiskRedundancy=NORMAL
+oracle.install.crs.config.sharedFileSystemStorage.ocrLocations=
+oracle.install.crs.config.sharedFileSystemStorage.ocrRedundancy=NORMAL
+               	
+oracle.install.crs.config.useIPMI=false
+
+oracle.install.crs.config.ipmi.bmcUsername=
+oracle.install.crs.config.ipmi.bmcPassword=
+
+oracle.install.asm.SYSASMPassword=<%= @asm_pw %>
+
+oracle.install.asm.diskGroup.name=<%= @dg_name %>
+
+oracle.install.asm.diskGroup.redundancy=NORMAL
+
+oracle.install.asm.diskGroup.AUSize=<%= @au_size %>
+
+oracle.install.asm.diskGroup.disks=<%= @ocr_dg %>
+
+oracle.install.asm.diskGroup.diskDiscoveryString=<%= @disk_string %>
+
+oracle.install.asm.monitorPassword=<%= @asm_pw %>
+
+oracle.install.crs.upgrade.clusterNodes=
+
+oracle.install.asm.upgradeASM=false
+
+oracle.installer.autoupdates.option=SKIP_UPDATES
+
+oracle.installer.autoupdates.downloadUpdatesLoc=
+
+AUTOUPDATES_MYORACLESUPPORT_USERNAME=
+
+AUTOUPDATES_MYORACLESUPPORT_PASSWORD=
+
+PROXY_HOST=
+
+PROXY_PORT=0
+
+PROXY_USER=
+
+PROXY_PWD=
+
+PROXY_REALM=
